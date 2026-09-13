@@ -1,0 +1,210 @@
+.main-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  width: 100%;
+  background-image: url(https://t4.ftcdn.net/jpg/19/35/45/29/360_F_1935452977_opfnmR4ltWXdxwRz4q5fNsC1iwR3T8jz.jpg);
+  background-size: cover;
+}
+.login-bar{
+  display: flex;
+  /* border: 2px solid black; */
+  width: 100vw;
+  height: 70px;
+}
+.content-div{
+  border-style:inherit;
+  height: 70%;
+  width: 50%;
+  max-width: 60rem;
+  border-radius: 4%;
+  background-color: white;
+}
+.text-div{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-text1{
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.15rem;
+  margin-top:0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content-text2{
+  font-size: 1.7rem;
+  margin-top: 0;
+}
+.icon-modes{
+  display: flex;
+  justify-content:space-evenly;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  gap:0.5rem;
+  flex-wrap: wrap;
+}
+.icon{
+  border: 2px solid black;
+  height: 7.6rem;
+  width:8rem;
+  flex-shrink: 1;  
+  /* If the parent size gets too narrow, the child elements shrink completly */
+  border-radius: 6px;
+  cursor: pointer;
+
+}
+/* ../ because style.css is inside styles folder. we have to come out of folder and then access the images folder. so we use ../ to break out. */
+
+.student-icon{
+  background-image: url(../images/student-icon.jpeg);
+  background-size: cover;
+}
+.HR-icon{
+  background-image: url(../images/HR-icon.jpeg);
+  background-size: cover;
+}
+.admin-icon{
+  background-image: url(../images/admin-icon.jpeg);
+  background-size: cover;
+}
+.placement-icon{
+  background-image: url(../images/placement-icon.jpeg);
+  background-size: cover;
+}
+.college-logo{
+  margin-left: 7rem;
+  height: 10rem;
+  width:15rem;
+  background-image: url(../images/gat-icon.jpeg);
+  background-size: cover;
+}
+.college-name{
+  margin-left: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.login-box{
+  height:50%;
+  width:100%;
+  margin-left: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.login-boxText{
+  background-image: url(../images/login-text.png);
+  height: 7.5rem;
+  width: 82%;
+  margin-left: 10%;
+  margin-top: 4rem;
+  
+}
+.login-text-js{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+.textbox-label-js{
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 28%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.username-input-js{
+  margin-left: 0.2rem;
+  height: 2.3rem;
+  width: min(20rem,80%);
+  font-size: 1.2rem;
+}
+.collective{
+  display: flex;
+  margin-left: 28%;
+  margin-top:0.5rem;
+}
+.textbox-icon{
+  background-image: url(https://tse3.mm.bing.net/th/id/OIP.KiZvKQuVesqkjMPOUcFFnQHaHa?r=0&pid=Api&P=0&h=180);
+  height: 2rem;
+  width: 2rem;
+  /* border: 1px solid black; */
+  background-size: cover;
+  margin-top:0.3rem;
+}
+.password-icon{
+  background-image: url(https://tse3.mm.bing.net/th/id/OIP.0BwGAOtPdiN2nNNb5Mg_lwHaHa?r=0&pid=Api&P=0&h=180);
+  height: 2rem;
+  width: 2rem;
+  background-size: cover;
+  margin-top:0.3rem;
+}
+.login-button{
+  margin-left: 15rem;
+  margin-top: 1rem;
+  width: 22.7rem;
+  height:2rem;
+  color: white;
+  background-color: rgb(86, 86, 213);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Media queries are used to apply a specific style based on the device specs */
+@media (max-width: 600px) {
+    .content-div {
+        width: 90%;
+        height: auto; /*Make the containers height  as tall as it needs to fit the content inside it*/
+        min-height: 80vh;
+    }
+    .content-text1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .content-text2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .icon-modes{
+      margin: 0;
+    }
+    .icon {
+        width: 6rem;
+        height: 6rem;
+    }
+    .college-logo {
+        margin-left: 0;
+        width: 10rem;
+        height: 6rem;
+    }
+    .college-name {
+        margin-left: 0.5rem;
+        font-size: 1.2rem;
+    }
+    .login-box {
+        width: 100%;
+    }
+    .collective{
+      margin-left: 0;
+    }
+    .textbox-label-js{
+      margin-left: 0;
+    }
+    .login-boxText {
+        width: 80%;
+        margin-left: 5%;
+        background-size: cover;
+    }
+    .username-input-js {
+        width: 80%;
+    }
+    .login-button {
+        width: 80%;
+        margin-left: 10%;
+    }
+}

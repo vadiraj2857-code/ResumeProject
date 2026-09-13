@@ -1,0 +1,108 @@
+.nav-bar{
+  width: 100vw;
+  border: 2px solid black;
+  height: 4rem;
+  display: flex;
+}
+.viewport-div{
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid black;
+}
+.main-div{
+  display: flex;
+}
+.side-tab{
+  border: 2px solid  black;
+  width:20rem;
+  height:46rem;
+}
+.content-div{
+  border: 2px solid black;
+  flex-grow: 1;
+  margin:2rem;
+  border-radius: 1rem;
+}
+.content-bar{
+  display: flex;
+}
+#content-text{
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.addResume-button{
+  margin-left: 50rem;
+  padding: 0;
+  height: 2.8rem;
+  width: 15rem;
+  margin-top: 2.5rem;
+  background-color: rgb(13, 115, 224);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.resume-list{
+  border: 2px solid black;
+  margin: 1rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+}
+.sideTab-dashboard{
+  border: 2px solid black;
+  margin-top: 3rem;
+  height:3rem;
+  margin-right: 1.2rem;
+  display: flex;
+  background-color: rgb(184, 184, 246);
+  border-top-right-radius: 2rem;
+}
+.sideTab-profile{
+  border: 2px solid black;
+  margin-top: 1rem;
+  height:3rem;
+  margin-right: 1.2rem;
+  display: flex;
+  background-color:rgb(184, 184, 246);
+  border-top-right-radius: 2rem;   
+}
+#dashboard-image{
+  margin-left:1rem;
+  background-image: url(../images/dashboard-image.png);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: contain;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+#profile-image{
+  margin-left:1rem;
+  background-image: url(../images/profile-icon.png);
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+#sidebar-text{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+#uni-image{
+  width:4rem;
+  height: 2.6rem;
+  margin:1rem;
+  background-image: url(https://tse3.mm.bing.net/th/id/OIP.KK3HJ4hUzA_YXDT6gN_YUgHaFG?r=0&pid=Api&P=0&h=180);
+  background-size: cover;
+}
+#welcome-message{
+  margin-top:1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+}
