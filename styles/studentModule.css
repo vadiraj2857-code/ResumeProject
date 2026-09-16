@@ -140,7 +140,97 @@
   background-size: cover;
   margin-left:0.5rem;
 }
-@media (max-width: 768px) {
+
+/* Media query for all laptops */
+/* Media query for all laptops: 1025px–1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .nav-bar {
+        height: 9%;
+        align-items: center;
+    }
+    #uni-logo {
+        width: 5rem;
+        height: 3.4rem;
+    }
+    #nav-bar-text1 {
+        font-size: 1.3rem;
+        margin-left: 2.5rem;
+        margin-top: 0.8rem;
+    }
+    #profile-logo {
+        width: 3.4rem;
+        height: 2.8rem;
+        margin-left: 25rem;
+    }
+    #nav-bar-text2 {
+        font-size: 0.9rem;
+    }
+    #student-name {
+        font-size: 0.9rem;
+    }
+    #logout-button {
+        font-size: 1.1rem;
+        margin-left: 2rem;
+        width: 5.5rem;
+        height: 2.7rem;
+        margin-top: 0.4rem;
+    }
+    .main-div {
+        height: 90%;
+    }
+    .sidebar-div {
+        width: 18%;
+    }
+    .content-div {
+        width: 78%;
+        margin: 1.2rem;
+        border-radius: 1.2rem;
+    }
+    /* SIDEBAR */
+    .dashboard-div,
+    .profile-div {
+        width: 12rem;
+        height: 6.5%;
+    }
+    .dashboard-div {
+        margin-top: 2.5rem;
+    }
+    .profile-div {
+        margin-top: 0.5rem;
+    }
+    #dashboard-image,
+    #profile-image {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+    #sidebar-text {
+        margin-left: 0.8rem;
+        margin-top: 0.7rem;
+        font-size: 0.9rem;
+    }
+    /* RESUME CONTENT */
+    .resume-list-header {
+        margin: 0.8rem;
+        height: 10%;
+    }
+    #resume-list-header-text {
+        font-size: 1.7rem;
+        margin-top: 0.8rem;
+    }
+    #add-resume-button {
+        margin-left: 25rem;
+        width: 10rem;
+        padding: 0.55rem;
+        font-size: 0.9rem;
+    }
+    .resume-list-div {
+        margin: 0.8rem;
+        height: 75%;
+    }
+}
+
+/* Media query for tablets and mobiles */
+@media (max-width: 1024px) {
     .nav-bar {
         height: auto;
         min-height: 5rem;
