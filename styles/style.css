@@ -10,7 +10,7 @@
 .login-bar{
   display: flex;
   /* border: 2px solid black; */
-  width: 100vw;
+  width: 100%;
   height: 70px;
 }
 .content-div{
@@ -143,7 +143,7 @@
   margin-top:0.3rem;
 }
 .login-button{
-  margin-left: 15rem;
+  margin-left: 13.5rem;
   margin-top: 1rem;
   width: 22.7rem;
   height:2rem;
