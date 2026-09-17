@@ -1,6 +1,9 @@
 :root{
   color-scheme: only light;
 }
+body{
+  background-color: white;
+}
 .viewport-div{
   border: 2px solid black;
   height: 100vh;
