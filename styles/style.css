@@ -185,7 +185,7 @@ body{
     }
     .college-logo {
         margin-left: 0;
-        width: 10rem;
+        width: 12rem;
         height: 6rem;
     }
     .college-name {
@@ -203,9 +203,10 @@ body{
     }
     .login-boxText {
         width: 69%;
-        height:3rem;
+        height:2.5rem;
         margin-left:3.5rem;
         background-size: contain;
+        margin-top:1rem;
     }
     .username-input-js {
         width: 80%;
