@@ -202,11 +202,7 @@ body{
       margin-left: 0;
     }
     .login-boxText {
-        width: 52%;
-        height:2.3rem;
-        margin-left:5.8rem;
-        background-size: contain;
-        margin-top:1rem;
+        display: none;
     }
     .username-input-js {
         width: 80%;

@@ -146,7 +146,12 @@ body{
   background-size: cover;
   margin-left:0.5rem;
 }
-
+.display-resumes{
+  height: fit-content;
+  width: 95%;
+  border: 2px solid black;
+  margin:1.5rem;
+}
 /* Media query for all laptops */
 /* Media query for all laptops: 1025px–1440px */
 @media (min-width: 1025px) and (max-width: 1440px) {

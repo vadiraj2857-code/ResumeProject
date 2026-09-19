@@ -25,6 +25,12 @@ resumeInput.addEventListener("change", () => {
             JSON.stringify(resumeData)
         );
         alert("Resume uploaded successfully!");
+        const displayResume=document.getElementById('Dummy-paragraph');
+        displayResume.innerHTML=`
+        <div class="pdf-icon"></div>
+        <p class="file-name">${file.name}</p>
+        <button class="delete-resume-buton">Delete</button>`;
     };
     reader.readAsDataURL(file);
 });
+localStorage.clear();
