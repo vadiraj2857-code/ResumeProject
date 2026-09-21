@@ -149,8 +149,33 @@ body{
 .display-resumes{
   height: fit-content;
   width: 95%;
-  border: 2px solid black;
   margin:1.5rem;
+}
+.Resume-row{
+  display: flex;
+}
+.displayedResume-div{
+  display: flex;
+  width: 50%;
+}
+.pdf-icon{
+  background-image: url(https://s.yimg.com/fz/api/res/1.2/tth3DvveYrsDpWvOp0TZug--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/bc/59/8e/bc598ea9830c59bbfeae5e0782dce15e.jpg);
+  background-size: contain;
+  height: 2.2rem;
+  width: 2.1rem;
+}
+.file-name{
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.delete-resume-buton{
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
 /* Media query for all laptops */
 /* Media query for all laptops: 1025px–1440px */
