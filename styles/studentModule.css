@@ -156,7 +156,7 @@ body{
 }
 .displayedResume-div{
   display: flex;
-  width: 50%;
+  width: 60%;
 }
 .pdf-icon{
   background-image: url(https://s.yimg.com/fz/api/res/1.2/tth3DvveYrsDpWvOp0TZug--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/bc/59/8e/bc598ea9830c59bbfeae5e0782dce15e.jpg);
@@ -222,7 +222,6 @@ body{
         margin: 1.2rem;
         border-radius: 1.2rem;
     }
-    /* SIDEBAR */
     .dashboard-div,
     .profile-div {
         width: 12rem;
@@ -244,7 +243,6 @@ body{
         margin-top: 0.7rem;
         font-size: 0.9rem;
     }
-    /* RESUME CONTENT */
     .resume-list-header {
         margin: 0.8rem;
         height: 10%;
@@ -333,4 +331,13 @@ body{
     .resume-list-div {
         height: 60vh;
     }
+    .displayedResume-div{
+      flex-wrap: wrap;
+      width: 70%;
+  }
+    .pdf-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0;
+  }
 }

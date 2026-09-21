@@ -16,6 +16,7 @@ if (savedResume) {
         `;
     });
 }
+// _blank is used to tell the browser to open in a new window
 // Here resume contains the first element of the array i.e, the first object.
 const uploadBtn = document.getElementById("add-resume-button");
 const resumeInput = document.getElementById("resumeInput");
