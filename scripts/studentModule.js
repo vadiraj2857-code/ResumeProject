@@ -2,20 +2,21 @@ let savedResume = localStorage.getItem("uploadedResume");
 let displayResume = document.getElementById("Dummy-paragraph");
 if (savedResume) {
     const resumes = JSON.parse(savedResume);
-    resumes.forEach(resume => {
+    resumes.forEach((resume,index) => {
         displayResume.innerHTML += `
-            <div class="Resume-row">
+            <div class="Resume-row resume-${index}">
                 <div class="displayedResume-div">
                     <div class="pdf-icon"></div>
                     <p class="file-name">${resume.name}</p>
                 </div>
                 <div class="deleteResume-div">
-                    <button class="delete-resume-buton">Delete</button>
+                    <button class="delete-resume-buton" onclick="deleteResume(${index})">Delete</button>
                 </div>
             </div>
         `;
     });
 }
+// First param for for each method contains the element, second parameter contains that element  index.
 // _blank is used to tell the browser to open in a new window
 // Here resume contains the first element of the array i.e, the first object.
 const uploadBtn = document.getElementById("add-resume-button");
@@ -49,13 +50,13 @@ resumeInput.addEventListener("change", () => {
             JSON.stringify(resumes)
         );
         displayResume.innerHTML += `
-            <div class="Resume-row">
+            <div class="Resume-row resume-${resumes.length-1}">
                 <div class="displayedResume-div">
                     <div class="pdf-icon"></div>
                     <p class="file-name">${file.name}</p>
                 </div>
                 <div class="deleteResume-div">
-                    <button class="delete-resume-buton">Delete</button>
+                    <button class="delete-resume-buton" onclick="deleteResume(${resumes.length-1})">Delete</button>
                 </div>
             </div>
         `;
@@ -63,3 +64,13 @@ resumeInput.addEventListener("change", () => {
     };
     reader.readAsDataURL(file);
 });
+// by doing resume-${resumes.length-1} each resume will have a unique class name making us easier to delete.
+function deleteResume(index){
+    let resumes=JSON.parse(localStorage.getItem("uploadedResume")) || [];
+    resumes.splice(index,1);  // Deletion.
+    localStorage.removeItem("uploadedResume");  // Updating local storage.
+    alert("Resume deleted.");
+    const resumeElement=document.querySelector(`.resume-${index}`);
+    resumeElement.parentNode.removeChild(resumeElement);
+    // Telling the resume element's parent to delete its child named resumeElement.
+}  

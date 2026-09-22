@@ -176,6 +176,7 @@ body{
   background-color: red;
   color: white;
   cursor: pointer;
+  width: 5rem;
 }
 /* Media query for all laptops */
 /* Media query for all laptops: 1025px–1440px */
