@@ -333,12 +333,15 @@ body{
         height: 60vh;
     }
     .displayedResume-div{
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
       width: 70%;
   }
     .pdf-icon{
     height: 1.5rem;
     width: 1.5rem;
     margin-left: 0;
+  }
+  .delete-resume-buton{
+    width:3.5rem;
   }
 }
