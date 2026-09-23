@@ -1,0 +1,48 @@
+.viewport-div{
+  width: 100%;
+  height: 100vh;
+  border: 2px solid black;
+}
+.top-bar{
+  display: flex;
+  border: 2px solid black;
+  height: 8%;
+}
+#profile-image{
+  height: 3rem;
+  width: 3rem;
+  margin: 0.5rem;
+  margin-top: 0.3rem;
+  background-image: url(https://png.pngtree.com/png-clipart/20190619/original/pngtree-vector-male-student-icon-png-image_3998154.jpg);
+  background-size: contain;
+}
+#profile-text1{
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0;
+}
+#profile-text2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 0;
+  text-wrap: wrap;
+}
+@media(max-width: 1024px){
+  #profile-image{
+    height: 1.3rem;
+    width: 1.5rem;
+    margin-top: 1rem;
+  }
+  #profile-text1{
+    font-size: 1.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+  }
+  #profile-text2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    text-wrap: wrap;
+    font-size: 0.8rem;
+  }
+}
