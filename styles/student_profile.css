@@ -30,12 +30,12 @@
 }
 
 
-.personal-details-div{
+.details-div{
   border: 2px solid black;
   margin: 0.5rem;
   height: fit-content;
 }
-.personal-details-header{
+.details-header{
   display: flex;
 }
 #profile-icon{
@@ -63,8 +63,12 @@
 .input-fields{
   margin-top:0.5rem;
 }
-
-
+#pro-icon{
+  background-image: url(https://cdn-icons-png.flaticon.com/128/18165/18165120.png);
+  height:2rem;
+  width: 2rem;
+  background-size: contain;
+}
 
 
 @media(max-width: 1024px){
