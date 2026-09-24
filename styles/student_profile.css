@@ -28,6 +28,45 @@
   margin-top: 0;
   text-wrap: wrap;
 }
+
+
+.personal-details-div{
+  border: 2px solid black;
+  margin: 0.5rem;
+  height: fit-content;
+}
+.personal-details-header{
+  display: flex;
+}
+#profile-icon{
+  background-image: url(https://tse3.mm.bing.net/th/id/OIP.ukyBvqWlVM8RE5pSjQNchwHaHa?r=0&pid=Api&h=220&P=0);
+  height:2rem;
+  width: 2rem;
+  background-size: contain;
+}
+.Per-details-text{
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.lines{
+  border: 2px solid black;
+  height: fit-content;
+  display: flex;
+}
+.text-box-label{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.input-fields{
+  margin-top:0.5rem;
+}
+
+
+
+
 @media(max-width: 1024px){
   #profile-image{
     height: 1.3rem;

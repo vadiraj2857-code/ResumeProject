@@ -15,7 +15,103 @@
         <p id="profile-text2">Filling all the below attributes are mandatory. Please fill carefully.</p>
       </div>
     </div>
+    <div class="personal-details-div">
+      <div class="personal-details-header">
+        <div id="profile-icon"></div>
+        <p class="Per-details-text">Personal details</p>
+      </div>
+      <div class="line-1 lines">
+        <div>
+          <p class="text-box-label">Full name *</p>
+          <input class="input-fields" placeholder="Enter your full name ">
+        </div>
+        <div>
+          <p class="text-box-label">USN *</p>
+          <input class="input-fields" placeholder="Enter your USN">
+        </div>
+        <div>
+          <p class="text-box-label">Branch *</p>
+          <select id="course" class="input-fields">
+            <option value="" disabled selected>Select your course</option>
+            <option value="cse">CSE</option>
+            <option value="cse-aiml">CSE-AIML</option>
+            <option value="ise">ISE</option>
+            <option value="aiml">AIML</option>
+            <option value="aids">AIDS</option>
+            <option value="ae">AE</option>
+            <option value="civil">CIVIL</option>
+            <option value="mec">MECHANICAL</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="mtech">MTECH</option>
+            <option value="mba">MBA</option>
+          </select>
+        </div>
+      </div>
+      <div class="line-2 lines">
+        <div>
+          <p class="text-box-label">Adress *</p>
+          <input class="input-fields" placeholder="Enter your complete adress">
+        </div>
+        <div>
+          <p class="text-box-label"> Phone number *</p>
+          <input class="input-fields" placeholder="Enter your phone number">
+        </div>
+        <div>
+          <p class="text-box-label">College email ID*</p>
+          <input class="input-fields" placeholder="example@gat.ac.in">
+        </div>
+      </div>
+      <div class="line-3 lines">
+        <div>
+          <p class="text-box-label">CGPA *</p>
+          <input class="input-fields" placeholder="eg. 8.5">
+        </div>
+        <div>
+          <p class="text-box-label"> Blood group *</p>
+          <select id="blood-group" class="input-fields">
+            <option value="" disabled selected>Select your blood group</option>
+            <option value="a+">A+</option>
+            <option value="b+">B+</option>
+            <option value="ab+">AB+</option>
+            <option value="o+">O+</option>
+            <option value="a-">A-</option>
+            <option value="b-">B-</option>
+            <option value="ab-">AB-</option>
+            <option value="o-">O-</option>
+          </select>
+        </div>
+        <div>
+          <p class="text-box-label">10th percentage *</p>
+          <input class="input-fields" placeholder="e.g. 85%">
+        </div>
+        <div>
+          <p class="text-box-label">12th percentage*</p>
+          <input class="input-fields" placeholder="e.g. 85%">
+        </div>
+      </div>
+      <div class="line-4 lines">
+        <div>
+          <p class="text-box-label">Physically challenged *</p>
+          <select id="phy-chal" class="input-fields">
+            <option value="" disabled selected>Select option</option>
+            <option value="yes">YES</option>
+            <option value="no">NO</option>
+          </select>
+        </div>
+        <div>
+          <p class="text-box-label">Date of birth *</p>
+          <input type="date" id="dob" name="dob">
+        </div>
+        <div>
+          <p class="text-box-label">Hobbies and intrests *</p>
+          <input class="input-fields" placeholder="Enter here">
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 <script src="scripts/student_profile.js"></script>
 </html>
+<!-- value="" disabled selected means, the option contains no value and when the user selects any of the branch, then that option which acts as a placeholder vanishes. -->
+ <!-- value is used to store the data or the value which is associated with that option. -->
