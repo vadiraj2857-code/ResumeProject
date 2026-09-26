@@ -55,7 +55,7 @@
   /* border: 2px solid black; */
   height: fit-content;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-bottom: 0.5rem;
 }
 .text-box-label{
@@ -87,7 +87,29 @@ label{
 .text-box-label{
   font-family:sans-serif;
 }
+.each-field-div{
+  margin-right: 8rem;
+  margin-left: 0.8rem;
+  margin-top: 0.5rem;
+}
+.input-adress{
+  padding: 0;
+  height: 3rem;
+  width: 16rem;
+  margin-right: 0;
+}
+.radio-button-input{
+  padding: 0.5rem;
+  width: 20rem;
+  margin-top: 0.2rem;
+}
+.radio-button{
+  margin-top: 0.5rem;
+}
 @media(max-width: 1024px){
+  .input-fields{
+    margin-left: 0.3rem;
+  }
   #profile-image{
     height: 1.3rem;
     width: 1.5rem;
@@ -106,5 +128,16 @@ label{
   }
   .lines{
     flex-wrap: wrap;
+  }
+  .each-field-div{
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+  .radio-button-input{
+    width: 15rem;
+    margin-left:0.3rem
+  }
+  .input-adress{
+    height: 2rem;
   }
 }
