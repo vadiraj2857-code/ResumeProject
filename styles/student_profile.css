@@ -4,7 +4,6 @@
 }
 .top-bar{
   display: flex;
-  border: 2px solid black;
   height: 8%;
 }
 #profile-image{
@@ -28,13 +27,15 @@
   text-wrap: wrap;
 }
 
-
 .details-div{
-  border: 2px solid black;
+  border: 2px solid rgba(0,0,0,0.3);
   margin: 0.5rem;
   height: fit-content;
+  border-radius: 0.5rem;
 }
 .details-header{
+  margin-left: 1rem;
+  margin-top: 0.2rem;
   display: flex;
 }
 #profile-icon{
